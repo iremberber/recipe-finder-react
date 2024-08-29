@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import icon from '/search-icon.svg';
 
 const Container = styled.div`
 display: flex;
@@ -17,10 +18,21 @@ const Header = styled.div`
   
 `;
 
+const AppNameComponent = styled.div`
+
+`;
+
+const SearchComponent = styled.div``;
+
 function App() {
   return (
     <Container>
-      <Header>recipe finder</Header>
+      <Header>
+        <AppNameComponent>Recipe Finder</AppNameComponent>
+        <SearchComponent>
+          <img src={icon} />
+        </SearchComponent>
+      </Header>
       irem
     </Container>
   );
